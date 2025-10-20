@@ -1,0 +1,12 @@
+{
+  "name": "writedown",
+  "version": "0.0.1",
+  "description": "Markdown editor",
+  "type": "module",
+  "scripts": {
+    "start": "electrobun build && electrobun dev"    
+  },
+  "dependencies": {
+    "electrobun": "0.0.19-beta.133"
+  }
+}
