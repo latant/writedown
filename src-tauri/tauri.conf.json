@@ -30,6 +30,22 @@
       "icons/128x128@2x.png",
       "icons/icon.icns",
       "icons/icon.ico"
+    ],
+    "fileAssociations": [
+      {
+        "role": "Editor",
+        "description": "Markdown",
+        "name": "Markdown",
+        "ext": ["md", "markdown"],
+        "mimeType": "text/markdown"
+      }
     ]
+  },
+  "plugins": {
+    "deep-link": {
+      "desktop": {
+        "schemes": ["file"]
+      }
+    }
   }
 }
