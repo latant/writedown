@@ -1,23 +1,20 @@
 export default {
     app: {
-        name: "multitab-browser",
-        identifier: "multitab-browser.electrobun.dev",
+        name: "Writedown",
+        identifier: "dev.latinovits.writedown",
         version: "0.0.1",
     },
     build: {
         bun: {
             entrypoint: "src/bun/index.ts",
-            external: [],
         },
         views: {
-            mainview: {
-                entrypoint: "src/mainview/index.ts",
-                external: [],
+            "main-ui": {
+                entrypoint: "src/main-ui/index.ts",
             },
         },
         copy: {
-            "src/mainview/index.html": "views/mainview/index.html",
-            "src/mainview/index.css": "views/mainview/index.css",
+            "src/main-ui/index.html": "views/main-ui/index.html",
         },
         mac: {
             bundleCEF: true,

@@ -4,9 +4,17 @@
   "description": "Markdown editor",
   "type": "module",
   "scripts": {
-    "start": "electrobun build && electrobun dev"    
+    "start": "bun run build:dev && electrobun dev",
+    "build:dev": "bun install && electrobun build",
+    "build:canary": "electrobun build --env=canary",
+    "build:stable": "electrobun build --env=stable"
   },
   "dependencies": {
+    "@milkdown/crepe": "7.17.1",
     "electrobun": "0.0.19-beta.133"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "5.9.3"
   }
 }
