@@ -1,8 +1,9 @@
-import "./main.css";
+import { Crepe } from "@milkdown/crepe";
 import "@milkdown/crepe/theme/common/style.css";
 import "@milkdown/crepe/theme/frame.css";
-import { Crepe } from "@milkdown/crepe";
 import { getCurrent } from "@tauri-apps/plugin-deep-link";
+import { readTextFile } from "@tauri-apps/plugin-fs";
+import "./main.css";
 
 // Choose your preferred theme
 
@@ -11,10 +12,16 @@ import { getCurrent } from "@tauri-apps/plugin-deep-link";
 // Initialize the editor
 
 async function main() {
+  let fileUrl = ""
+  let fileContent = ""
   const startUrls = await getCurrent();
+  if (startUrls && startUrls[0]) {
+    fileUrl = startUrls[0]
+    fileContent = await readTextFile(fileUrl);
+  }
   const crepe = new Crepe({
     root: document.getElementById("app"),
-    defaultValue: `\`${JSON.stringify(startUrls, null, 2)}\``,
+    defaultValue: fileContent,
   });
   await crepe.create();
 }
