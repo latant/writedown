@@ -3,3 +3,27 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.milkdown .milkdown-slash-menu .tab-group {
+  padding: 0px 0px 0 !important;
+  display: none !important;
+}
+
+.milkdown .milkdown-slash-menu .tab-group ul {
+  padding: 6px 6px !important;
+  gap: 4px !important;
+}
+
+.milkdown .milkdown-slash-menu .menu-groups {
+  padding: 4px 4px 4px 4px !important;
+  max-height: 13rem !important;
+}
+
+.milkdown .menu-group > h6 {
+  display: none !important;
+}
+
+.milkdown .milkdown-slash-menu .menu-groups .menu-group li {
+  gap: 16px !important;
+  padding: 4px 2px !important;
+}
