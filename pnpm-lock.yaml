@@ -16,6 +16,15 @@ dependencies:
   '@tauri-apps/plugin-fs':
     specifier: ~2
     version: 2.4.2
+  '@tauri-apps/plugin-log':
+    specifier: ~2
+    version: 2.7.0
+  '@tauri-apps/plugin-process':
+    specifier: ~2
+    version: 2.3.0
+  uuid:
+    specifier: ^13.0.0
+    version: 13.0.0
   vite:
     specifier: ^6.0.3
     version: 6.0.3
@@ -1342,6 +1351,18 @@ packages:
       '@tauri-apps/api': 2.9.0
     dev: false
 
+  /@tauri-apps/plugin-log@2.7.0:
+    resolution: {integrity: sha512-81XQ2f93x4vmIB5OY0XlYAxy60cHdYLs0Ki8Qp38tNATRiuBit+Orh3frpY3qfYQnqEvYVyRub7YRJWlmW2RRA==}
+    dependencies:
+      '@tauri-apps/api': 2.9.0
+    dev: false
+
+  /@tauri-apps/plugin-process@2.3.0:
+    resolution: {integrity: sha512-0DNj6u+9csODiV4seSxxRbnLpeGYdojlcctCuLOCgpH9X3+ckVZIEj6H7tRQ7zqWr7kSTEWnrxtAdBb0FbtrmQ==}
+    dependencies:
+      '@tauri-apps/api': 2.9.0
+    dev: false
+
   /@types/debug@4.1.12:
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
     dependencies:
@@ -2356,6 +2377,11 @@ packages:
       '@types/unist': 3.0.3
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.0.2
+    dev: false
+
+  /uuid@13.0.0:
+    resolution: {integrity: sha512-XQegIaBTVUjSHliKqcnFqYypAd4S+WCYt5NIeRs6w/UAry7z8Y9j5ZwRRL4kzq9U3sD6v+85er9FvkEaBpji2w==}
+    hasBin: true
     dev: false
 
   /vfile-message@4.0.3:
